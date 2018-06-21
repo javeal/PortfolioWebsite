@@ -9,10 +9,7 @@
 				padding-bottom: 30px;
 				padding-top: 20px;
 			}
-			nav{
-				color:red;
-				float:inherit;
-			}
+
 			article{
 				text-align: center;
 				font-family: impact,charcoal,sans-serif;
@@ -31,20 +28,26 @@
 				padding-top: 375px;
 			}
 			li{
+				float:left;
+
+			}
+			li a{
 				font-size: 20px;
 				font-family: impact,charcoal,sans-serif;
-				float:left;
 				color: black;
 				padding:20px 50px;
 				display:block;
+				text-decoration: none;
 			}
-			li:hover{
+			li a:hover{
 				background-color: white;
 			}
-			li:active{
+			.active{
+
 				background-color: purple;
 			}
 			ul{
+				list-style-type: none;
 				position: sticky;
 				background-color: deepskyblue;
 				float:inherit;
@@ -61,10 +64,10 @@
 		<header> Joe Veal Engineering Information Website </header>
 	  <nav>
 			<ul>
-				<li>Home</li>
-				<li>Bio</li>
-				<li>Projects</li>
-				<li>Resume</li>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="bio.html">Bio</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="resume.html">Resume</a></li>
 			</ul>
 		</nav>
 		<aside>
