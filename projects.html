@@ -11,11 +11,16 @@
 			}
 			footer{
 				text-align: center;
-				font-size: 12px;
-				padding-top: 375px;
+				font-size: 14px;
+				position: relative;
+				bottom: 5px;
+				left: 0px;
+				width: 100%;
+			}
+			nav li{
+				float:left;
 			}
 			li{
-				float:left;
 
 			}
 			li a{
@@ -42,7 +47,41 @@
 				padding: 0;
 				overflow: hidden;
 			}
+			article{
+				padding-left: 100px;
+				padding-right: 250px;
+				font-family: Arial,Bold,serif;
+			}
+			a{
+				font-size: 18px;
 
+			}
+			h1{
+				font-size: 35px;
+				font-family: impact,charcoal,sans-serif;
+				color: black;
+				text-align: center;
+			}
+			p{
+				font-size: 16px;
+				display: inline-block;
+				margin: 3px;
+			}
+			h3{
+				font-size: 24px;
+				padding-bottom: : 0px;
+				margin-bottom: 3px;
+				margin-top: 50px;
+			}
+			h5{
+				font-size: 18px;
+				display: inline-block;
+				margin: 3px;
+			}
+			div{
+				padding-top: 0px;
+				margin: 0px;
+			}
 			body {background-image: url("circuit-17481.jpg");}
 			</style>
 	</head>
@@ -57,9 +96,91 @@
 				<li><a href="resume.html">Resume</a></li>
 			</ul>
 		</nav>
+		<article>
+			<h1>Projects List</h1>
+			<h3>Facial Recognition System</h3>
+			<div class="">
+				<h5>Description:</h5>
+				<p>This facial recognition system was implimented using the PCA algorithim. The PCA algorithim is a machine learning technique that makes use of EigenFaces, Euclidean Distance and data compression. This system was developed in Python using the Spyder IDE from Anaconda. The system is only currently functional in the Spyder IDE. The next step is to use python to run the system in Windows PowerShell. This will allow the system to run with a GUI and access the webcam of a computer. </p>
+			</div>
+			<div class="">
+					<h5>Skills:</h5>
+					<p>Machine Learning, Python, Digital Signal Processing, Linear Algebra</p>
+			</div>
+			<a href="#">Facial Recognition Report</a>
 
+
+			<h3>This Website</h3>
+			<div class="">
+				<h5>Description:</h5>
+				<p>This Website was developed to describe projects that I have worked on that cannot be included in my resume. This website was developed using the Atom text editor for its Github inegration features. The source code for this website can be found on my Github page, and of course by pressing ctrl+u. The two main languages used to develop this website were HTML and CSS. By working on this project I grew my skills in web development and Git. I will update this website as I continue to work on new projects and develop new skills. This website was created to allow viewers of my Linkedin profile and Resume to learn more about my experience and work history.</p>
+			</div>
+			<div class="">
+					<h5>Skills:</h5>
+					<p>Web Development, HTML, CSS, PHP and Git</p>
+			</div>
+
+
+			<h3>Responsive Vehicle</h3>
+			<div class="">
+				<h5>Description:</h5>
+				<p>The objective was to navigate through an obstacle course, without being able to look at the obstacle course. The project was done using a Rumba Vaccum fitted with a Texas Instruments Micro-Controller and a variety of sensors. This project was coded in C and made use of GUI to navagate the robot. The robot collected data from the sensors and sent the data to the GUI through an SSH connection. The robot was configured to connect to wifi to make the SSH connection possible. Commands were sent to the robot through the connection once data had been recieved by the GUI. Some of the obstacles included cliffs, tall poles, short poles and an out of bounds line.</p>
+			</div>
+			<div class="">
+					<h5>Skills:</h5>
+					<p>Embedded System Design, C Programing, Bitwise Register Operations and Teamwork </p>
+			</div>
+			<div class="">
+					<a href="#">Responsive Vehicle Report</a>
+			</div>
+			<div class="">
+					<a href="#">Responsive Vehicle Video</a>
+			</div>
+
+
+
+			<h3>DTMF Encoder/Decoder</h3>
+			<div class="">
+				<h5>Description:</h5>
+				<p>DTMF is the logic of encoding frequencies for dial up calls. The various dial tones are a combination of of two frequencies, and those frequencies depend on the location of the number on the dial pad. This project required the design of very narrow band pass filter that could decode the frequencies the system recieved. The signals were incoded by the generation of sinusoids based on the number entered. The system produced the tones and delivered the decoded results. This was done using MATLAB.</p>
+			</div>
+			<div class="">
+					<h5>Skills:</h5>
+					<p>Filter Design and MATLAB </p>
+			</div>
+			<a href="/Project_Reports/lab_10_report_dtmf.pdf">DTMF encoder/decoder Report</a>
+			<h3>Random Number Generator</h3>
+			<div class="">
+				<h5>Description:</h5>
+				<p>The Random Number Generator is a project developed using Altera products in the area of digital circuit design. The numbers were generated using a formula that produced a output that varied depending on the input. The design process included creating state machines, truth tables, and circuit diagrams in altera. For convience, some of the components were coded using Verilog. Some components inside the Generator were Register Files, Registers and a parallel shift Register. The input was controlled with switches on an Altera board, and the output was shown on 7 segment displays. </p>
+			</div>
+			<div class="">
+					<h5>Skills:</h5>
+					<p>Digital Circuit Design, Boolean Logic and Verilog </p>
+			</div>
+			<a href="#">Random Number Generator Report</a>
+			<h3>Sound System Reciever</h3>
+			<div class="">
+				<h5>Description:</h5>
+				<p>This project can be consisted of the design of 3 analog filters. There was a second order active low pass filter, a second order active high pass filter, and a first order active band pass filter. The idea of the filters was to divide parts of the signal to send to different types of speakers. For example, low frequencies would be directed to a subwoofer. Some of the components used to create this system were op amps, capacitors, inductors and resistors.</p>
+			</div>
+			<div class="">
+					<h5>Skills:</h5>
+					<p>Analog Circuit Design, Circuit Analysis, Filter Design and Testing </p>
+			</div>
+			<h3>Beat Syncronization Device</h3>
+			<div class="">
+				<h5>Description:</h5>
+				<p>This project resulted in a LED display that lit different LEDs based on the current frequencies playing in the song. This was a real time system. It ran off of two arduinos and two MATLAB scripts run simultaneously. The arduinos were used to recieve the input as well as output a signal from the port that corresponed to the correct frequency.</p>
+			</div>
+			<div class="">
+					<h5>Skills:</h5>
+					<p>MATLAB, Circuitry and Teamwork</p>
+			</div>
+			<a href="#">Beat Syncronization Device Report</a>
+		</article>
 		<footer>
-			Last updated on 6/10/2018                Author: Joe Veal
+			Last updated on 7/7/2018                Author: Joe Veal
 		</footer>
 	</body>
 </html>
