@@ -3,27 +3,38 @@
 	<head>
 			<title> Joe Veal Portfolio Website</title>
 			<style>
-			header{
+			header
+			{
 				font-size: 60px;
 				font-family: impact,charcoal,sans-serif;
 				padding-bottom: 30px;
 				padding-top: 20px;
 			}
-			footer{
+			footer
+			{
 				text-align: center;
 				font-size: 14px;
-				position: relative;
+				position: static;
 				bottom: 5px;
-				left: 0px;
-				width: 100%;
+				margin-left: 10%;
+				margin-right: 10%;
+				background-color: white;
 			}
-			nav li{
+			article
+			{
+				background-color: white;
+				margin-left: 10%;
+				margin-right: 10%;
+				padding:10px;
+				line-height: 150%;
+				font-family: veranda,sans-serif;
+			}
+			nav li
+			{
 				float:left;
 			}
-			li{
-
-			}
-			li a{
+			nav li a
+			{
 				font-size: 20px;
 				font-family: impact,charcoal,sans-serif;
 				color: black;
@@ -31,58 +42,78 @@
 				display:block;
 				text-decoration: none;
 			}
-			li a:hover{
+			nav li a:hover
+			{
 				background-color: white;
 			}
-			.active{
-
+			nav li a.active
+			{
 				background-color: gray;
 			}
-			ul{
+			nav ul
+			{
 				list-style-type: none;
-				position: sticky;
 				background-color: deepskyblue;
-				float:inherit;
 				margin: 0;
 				padding: 0;
 				overflow: hidden;
 			}
-			article{
-				padding-left: 100px;
-				padding-right: 250px;
-				font-family: Arial,Bold,serif;
-				background-color: deepskyblue;
-			}
-			a{
+			a
+			{
 				font-size: 18px;
-
+				display: block;
 			}
-			h1{
+			article h1
+			{
 				font-size: 35px;
-				font-family: impact,charcoal,sans-serif;
-				color: black;
 				text-align: center;
 			}
-			p{
-				font-size: 16px;
+			article div
+			{
+				margin-left: 3%;
+				margin-top: 2%;
+				margin-bottom: 5%;
+			}
+			article h2
+			{
+				font-size: 25px;
+				text-decoration-line: underline;
+				margin-bottom: 3%;
+			}
+			article h3
+			{
+				margin-bottom: 0%;
+				padding-bottom: 0%;
+				font-size: 20px;
+			}
+			div.current_projects h5
+			{
+				margin-top:0%;
+				margin-bottom: 0%;
+				font-size: 15px;
+			}
+			div.current_projects li
+			{
+				margin-left: 3%;
+			}
+			div.past_projects
+			{
+				margin-bottom: 0%;
+			}
+			div.past_projects p
+			{
 				display: inline-block;
-				margin: 3px;
+				margin-top:0%;
+				margin-bottom:0%;
 			}
-			h3{
-				font-size: 24px;
-				padding-bottom: : 0px;
-				margin-bottom: 3px;
-				margin-top: 50px;
-			}
-			h5{
-				font-size: 18px;
+			div.past_projects h5
+			{
+				margin-top:0%;
 				display: inline-block;
-				margin: 3px;
+				margin-bottom: 0%;
+				font-size: 15px;
 			}
-			div{
-				padding-top: 0px;
-				margin: 0px;
-			}
+
 			body {background-image: url("circuit-17481.jpg");}
 			</style>
 	</head>
@@ -98,91 +129,206 @@
 			</ul>
 		</nav>
 		<article>
-			<h1>Projects List</h1>
-			<h3>Facial Recognition System</h3>
-			<div class="">
-				<h5>Description:</h5>
-				<p>This facial recognition system was implimented using the PCA algorithim. The PCA algorithim is a machine learning technique that makes use of EigenFaces, Euclidean Distance and data compression. This system was developed in Python using the Spyder IDE from Anaconda. The system is only currently functional in the Spyder IDE. The next step is to use python to run the system in Windows PowerShell. This will allow the system to run with a GUI and access the webcam of a computer. </p>
+			<h1>Projects and Courses</h1>
+			<p>
+				Below are lists of projects I am either currently working on, or am planning to work on this year. Followed by that is a list of my coursework
+				related to my areas of interest. These courses were all excellently taught and highly enjoyable. Each of these courses had a large influence on
+				my career decisions and project selections. Finally, I have a section on past projects, dating all the way back to the beginning of college. I
+				do not have any projects I have done professionally on this page. Each section and project can be expanded for more details by clicking on the
+				corresponding title.
+			</p>
+
+			<h2>Current Projects</h2>
+			<div class="current_projects">
+				<h3>Phone Time Management Android App</h3>
+				<div class="phone_app">
+					<p>
+							This is a project I have been looking forward to, because I have never made an app before! The goal of this project is to develop an App
+							that tracks the amount of time I spend on my phone each day. I plan to use this app to help me keep my phone usage and poor time management
+							under control. This project will require me to do quite a bit of research, and will be one of the more difficult projects I have attempted
+							since graduating college. Even though many apps like this already exist, I would like to make this app available for anyone to use. I am
+							planning to start this project in march. Here are some deliverables I have created for myself on this project.
+					</p>
+					<ul>
+						<h5>Requirements:</h5>
+						<li>The app will track time used per day month and year</li>
+						<li>The app will be have a configurable notification system for time spent on the phone</li>
+						<li>The code must be easily editable to add information on the dangers of phone usage</li>
+						<li>The App must be easily destributed and installed</li>
+						<li>The app will track phone time in different catagories such as texting time, game time, and socail media time (stretch goal)</li>
+					</ul>
+				</div>
+
+				<h3>Facial Recognition Website Login</h3>
+				<div class="recognition_webiste">
+					<p>
+							This project is intended to be an interface for a facial recognition project I worked on in college. This was my first ever machine learning
+							project! This was also my final project in my digital signal processing class described in the coursework section. It is also mentioned in the past
+							projects section. My goal is to clean up the code I wrote 2 years ago and improve the speed. The facial recognition algorithm makes use of PCA to
+							reduce the size of the data and remove noise. The object then follows the PCA demensionality reduction with a tweaked version of k-nearest
+							nieghbors (KNN). In this version the reference distance is the average face and the number of nearest neighbors is 1. I know much more about
+							PCA and KNN now which should allow me to improve the project significantly! I would like to build a web based interface using the Django framework
+							that will allow users to interact with the algorithm. I want the users to be able to save data to the webserver and login to view their data using their
+							face. This is an ambitious project that will require frontend work that could be challenging for me! Some deliverables for this project are given below
+					</p>
+					<ul>
+						<h5>Requirements:</h5>
+						<li>The website will support uploading of images to train the algorithm based on new users</li>
+						<li>The webiste will have a backup login system in case facial recognition fails</li>
+						<li>The website will have all data collection set to optional</li>
+						<li>The website will login users in a timely manner</li>
+						<li>The website will access the webcam to allow user to take pictures and upload them </li>
+						<li>The website must have a threshold of error that minimizes incorrect classifications</li>
+						<li>The website will have a way to report incorrect classifications</li>
+					</ul>
+				</div>
+
 			</div>
-			<div class="">
+
+			<h2>Relevant Coursework</h2>
+			<div class="relevant_coursework">
+				<h3>Machine Learning EE425</h3>
+				<div class="ee425">
+					<p>
+						This class was taken in the spring of 2019, and taught by Dr. Namrata Vaswani. The course was an introduction to machine learning that was
+						primarily focused on implimentation of algorithms. The class consisted of a lecture that covered the theory behind the algorithms while
+						the homework was to impliment the algorithms in python. We usually used the MNIST dataset for our assignments. Some of the topics we
+						covered in this class include, logistic Regression, gradient decent, naive bayes, maximum likelyhood estimation, support vector machines,
+						principle component analysis, and clustering. The course included a few lectures on the basics of neural networks and the kalman filter,
+						however no assignments we given on these topics.
+					</p>
+				</div>
+
+				<h3>Digital Signal Processing</h3>
+				<div class="ee424">
+					<p>
+						This class was taken in the spring of 2018 and taught by Dr. Alexsandar Dodganzich. This was an introductory course to digital signal Processing
+						that covered basic signal fundamentals for the first half and DSP techniques for the second half. In the first half of the course we focues on
+						the Fourier Series, DTFT, Z transform, and the DFT. In the second half of the course we covered things like windowing, the FFT algorithm, filter
+						design, sampling and reconstruction and image processing. This course included a lab that was done in MATLAB. Lectures were theoretical with
+						problem sets given as assignments.
+					</p>
+				</div>
+
+				<h3>Communication Systems</h3>
+				<div class="ee321">
+					<p>
+						This class was taken in the fall of 2018 and taught by Dr. Sang Kim. This course covered the theory of communication systems. This class did
+						not have a lab but included MATLAB portions of the homework. This class covered topics such as FM, AM, and other modulation schemes. Some other
+						topics were line coding, signal properties, signal transmissions, sampling and reconstruction.
+					</p>
+				</div>
+			</div>
+
+			<h2>Past Projects</h2>
+			<div class="past_projects">
+				<h3>Facial Recognition System</h3>
+				<div class="facial_recognition">
+					<h5>Description:</h5>
+					<p>
+						This facial recognition system was implimented using the PCA algorithim. The PCA algorithim is a machine learning technique that makes use
+						of EigenFaces, Euclidean Distance and data compression. This system was developed in Python using the Spyder IDE from Anaconda. The system is
+						only currently functional in the Spyder IDE. The next step is to use python to run the system in Windows PowerShell. This will allow the system
+						to run with a GUI and access the webcam of a computer.
+					</p>
 					<h5>Skills:</h5>
 					<p>Machine Learning, Python, Digital Signal Processing, Linear Algebra</p>
-			</div>
-			<a href="Project_Reports/Facial_Recognition_Report.pdf">Facial Recognition Report</a>
+					<a href="Project_Reports/Facial_Recognition_Report.pdf">Facial Recognition Report</a>
+				</div>
 
 
-			<h3>This Website</h3>
-			<div class="">
-				<h5>Description:</h5>
-				<p>This Website was developed to describe projects that I have worked on that cannot be included in my resume. This website was developed using the Atom text editor for its Github inegration features. The source code for this website can be found on my Github page, and of course by pressing ctrl+u. The two main languages used to develop this website were HTML and CSS. By working on this project I grew my skills in web development and Git. I will update this website as I continue to work on new projects and develop new skills. This website was created to allow viewers of my Linkedin profile and Resume to learn more about my experience and work history.</p>
-			</div>
-			<div class="">
+
+				<h3>This Website</h3>
+				<div class="website">
+					<h5>Description:</h5>
+					<p>
+						This Website was developed to describe projects that I have worked on that cannot be included in my resume. This website was developed using
+						the Atom text editor for its Github inegration features. The source code for this website can be found on my Github page, and of course by
+						pressing ctrl+u. The two main languages used to develop this website were HTML and CSS. By working on this project I grew my skills in web
+						development and Git. I will update this website as I continue to work on new projects and develop new skills. This website was created to allow
+						viewers of my Linkedin profile and Resume to learn more about my experience and work history.
+					</p>
 					<h5>Skills:</h5>
 					<p>Web Development, HTML, CSS, PHP and Git</p>
-			</div>
+				</div>
 
 
-			<h3>Responsive Vehicle</h3>
-			<div class="">
-				<h5>Description:</h5>
-				<p>The objective was to navigate through an obstacle course, without being able to look at the obstacle course. The project was done using a Rumba Vaccum fitted with a Texas Instruments Micro-Controller and a variety of sensors. This project was coded in C and made use of GUI to navagate the robot. The robot collected data from the sensors and sent the data to the GUI through an SSH connection. The robot was configured to connect to wifi to make the SSH connection possible. Commands were sent to the robot through the connection once data had been recieved by the GUI. Some of the obstacles included cliffs, tall poles, short poles and an out of bounds line.</p>
-			</div>
-			<div class="">
+				<h3>Responsive Vehicle</h3>
+				<div class="responsive_vehicle">
+					<h5>Description:</h5>
+					<p>
+						The objective was to navigate through an obstacle course, without being able to look at the obstacle course. The project was done using a Rumba
+						Vaccum fitted with a Texas Instruments Micro-Controller and a variety of sensors. This project was coded in C and made use of GUI to navagate the
+						robot. The robot collected data from the sensors and sent the data to the GUI through an SSH connection. The robot was configured to connect to
+						wifi to make the SSH connection possible. Commands were sent to the robot through the connection once data had been recieved by the GUI. Some of
+						the obstacles included cliffs, tall poles, short poles and an out of bounds line.
+					</p>
 					<h5>Skills:</h5>
 					<p>Embedded System Design, C Programing, Bitwise Register Operations and Teamwork </p>
-			</div>
-			<div class="">
 					<a href="#">Responsive Vehicle Report</a>
-			</div>
-			<div class="">
 					<a href="#">Responsive Vehicle Video</a>
-			</div>
+				</div>
 
 
-
-			<h3>DTMF Encoder/Decoder</h3>
-			<div class="">
-				<h5>Description:</h5>
-				<p>DTMF is the logic of encoding frequencies for dial up calls. The various dial tones are a combination of of two frequencies, and those frequencies depend on the location of the number on the dial pad. This project required the design of very narrow band pass filter that could decode the frequencies the system recieved. The signals were incoded by the generation of sinusoids based on the number entered. The system produced the tones and delivered the decoded results. This was done using MATLAB.</p>
-			</div>
-			<div class="">
+				<h3>DTMF Encoder/Decoder</h3>
+				<div class="dtmf">
+					<h5>Description:</h5>
+					<p>
+						DTMF is the logic of encoding frequencies for dial up calls. The various dial tones are a combination of of two frequencies, and those frequencies
+						depend on the location of the number on the dial pad. This project required the design of very narrow band pass filter that could decode the
+						frequencies the system recieved. The signals were incoded by the generation of sinusoids based on the number entered. The system produced the tones
+						and delivered the decoded results. This was done using MATLAB.
+					</p>
 					<h5>Skills:</h5>
 					<p>Filter Design and MATLAB </p>
-			</div>
-			<a href="Project_Reports/lab_10_report_dtmf.pdf">DTMF encoder/decoder Report</a>
-			<h3>Random Number Generator</h3>
-			<div class="">
-				<h5>Description:</h5>
-				<p>The Random Number Generator is a project developed using Altera products in the area of digital circuit design. The numbers were generated using a formula that produced a output that varied depending on the input. The design process included creating state machines, truth tables, and circuit diagrams in altera. For convience, some of the components were coded using Verilog. Some components inside the Generator were Register Files, Registers and a parallel shift Register. The input was controlled with switches on an Altera board, and the output was shown on 7 segment displays. </p>
-			</div>
-			<div class="">
+					<a href="Project_Reports/lab_10_report_dtmf.pdf">DTMF encoder/decoder Report</a>
+				</div>
+
+				<h3>Random Number Generator</h3>
+				<div class="random_number">
+					<h5>Description:</h5>
+					<p>
+						The Random Number Generator is a project developed using Altera products in the area of digital circuit design. The numbers were generated using
+						 a formula that produced a output that varied depending on the input. The design process included creating state machines, truth tables, and circuit
+						 diagrams in altera. For convience, some of the components were coded using Verilog. Some components inside the Generator were Register Files,
+						 Registers and a parallel shift Register. The input was controlled with switches on an Altera board, and the output was shown on 7 segment displays.
+					</p>
 					<h5>Skills:</h5>
 					<p>Digital Circuit Design, Boolean Logic and Verilog </p>
-			</div>
-			<a href="">Random Number Generator Report</a>
-			<h3>Sound System Reciever</h3>
-			<div class="">
-				<h5>Description:</h5>
-				<p>This project can be consisted of the design of 3 analog filters. There was a second order active low pass filter, a second order active high pass filter, and a first order active band pass filter. The idea of the filters was to divide parts of the signal to send to different types of speakers. For example, low frequencies would be directed to a subwoofer. Some of the components used to create this system were op amps, capacitors, inductors and resistors.</p>
-			</div>
-			<div class="">
+					<a href="">Random Number Generator Report</a>
+				</div>
+
+				<h3>Sound System Receiver</h3>
+				<div class="analog_receiver">
+					<h5>Description:</h5>
+					<p>
+						This project can be consisted of the design of 3 analog filters. There was a second order active low pass filter, a second order active high pass
+						 filter, and a first order active band pass filter. The idea of the filters was to divide parts of the signal to send to different types of speakers.
+						 For example, low frequencies would be directed to a subwoofer. Some of the components used to create this system were op amps, capacitors, inductors
+						 and resistors.
+					</p>
 					<h5>Skills:</h5>
 					<p>Analog Circuit Design, Circuit Analysis, Filter Design and Testing </p>
-			</div>
-			<a href="Project_Reports/Sound_System_Report.pdf">Sound System Reciever Report</a>
-			<h3>Beat Syncronization Device</h3>
-			<div class="">
-				<h5>Description:</h5>
-				<p>This project resulted in a LED display that lit different LEDs based on the current frequencies playing in the song. This was a real time system. It ran off of two arduinos and two MATLAB scripts run simultaneously. The arduinos were used to recieve the input as well as output a signal from the port that corresponed to the correct frequency.</p>
-			</div>
-			<div class="">
+					<a href="Project_Reports/Sound_System_Report.pdf">Sound System Reciever Report</a>
+				</div>
+
+				<h3>Beat Syncronization Device</h3>
+				<div class="beat_sync">
+					<h5>Description:</h5>
+					<p>
+						This project resulted in a LED display that lit different LEDs based on the current frequencies playing in the song. This was a real time system.
+						It ran off of two arduinos and two MATLAB scripts run simultaneously. The arduinos were used to recieve the input as well as output a signal from
+						the port that corresponed to the correct frequency.
+					</p>
 					<h5>Skills:</h5>
 					<p>MATLAB, Circuitry and Teamwork</p>
+					<a href="Project_Reports/186_Final_Project_Lab_Report.pdf">Beat Syncronization Device Report</a>
+				</div>
+
 			</div>
-			<a href="Project_Reports/186_Final_Project_Lab_Report.pdf">Beat Syncronization Device Report</a>
 		</article>
 		<footer>
-			Last updated on 9/17/2018                Author: Joe Veal
+			Last updated on 3/1/2020 by Joe Veal
 		</footer>
 	</body>
 </html>

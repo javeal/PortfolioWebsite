@@ -11,47 +11,48 @@
 			}
 			article{
 				text-align: center;
-				font-family: impact,charcoal,sans-serif;
-				width: 70%;
-				background-color: deepskyblue;
+				font-family: veranda,sans-serif;
+				margin-left: 10%;
+				margin-right:10%;
+				background-color: white;
+				padding:10px;
+				line-height: 150%;
 			}
-			aside{
-				padding-right: 5px;
-				text-align: center;
-				font-family: Arial,Bold,serif;
-				font-size: 20px;
-				border-left: 1px solid;
-				float: right;
-				margin-top: 10px;
-				width: 25%;
-				height: 100%;
-				background-color: deepskyblue;
+			div.skill_lists ul{
+				list-style-type: circle;
+				display: list-item;
+			}
+			div.skill_lists li{
+				display: inline;
 			}
 			footer{
 				text-align: center;
 				font-size: 14px;
-				position: fixed;
+				position: static;
 				bottom: 5px;
-				width: 100%;
+				padding-top:  60px;
+				margin-left: 10%;
+				margin-right: 10%;
+				background-color: white;
 			}
-			li{
+			nav li{
 				float:left;
 			}
-			li a{
+			nav li a{
 				font-size: 20px;
 				font-family: impact,charcoal,sans-serif;
 				color: black;
 				padding:20px 50px;
 				display:block;
-				text-decoration: none;
+				text-decoration:none;
 			}
-			li a:hover{
+			nav li a:hover{
 				background-color: white;
 			}
 			.active{
 				background-color: gray;
 			}
-			ul{
+			nav ul{
 				list-style-type: none;
 				position: sticky;
 				background-color: deepskyblue;
@@ -60,18 +61,23 @@
 				padding: 0;
 				overflow: hidden;
 			}
-			h5{
-				margin-top: 5px;
-				margin-bottom: 5px;
-				padding-top: 5px;
-				padding_bottom: 5px;
-			}
+
 			h4{
 				display: inline-block;
+				margin-bottom: 15px;
 			}
 			h3{
-				display: inline-block;
 				margin-right: 15px;
+				margin-bottom: 15px;
+				display: inline-block;
+			}
+			h1{
+				margin-bottom:15px;
+			}
+			div.contact_box{
+				border-style: solid;
+				margin-left: 25%;
+				margin-right: 25%;
 			}
 
 			body {background-image: url("circuit-17481.jpg");}
@@ -88,25 +94,6 @@
 				<li><a href="resume.html">Resume</a></li>
 			</ul>
 		</nav>
-		<aside>
-
-				<h3>Coding Languages</h3>
-				<h5>C</h5>
-				<h5>MATLAB</h5>
-				<h5>Python</h5>
-				<h5>HTML</h5>
-				<h5>CSS</h5>
-				<h5>Java</h5>
-				<h5>YAML</h5>
-				<h5>Verilog</h5>
-				<h3>Skills</h3>
-				<h5>System Architecture</h5>
-				<h5>Digital Signal Processing</h5>
-				<h5>Machine Learning</h5>
-				<h5>Embedded Systems</h5>
-				<h5>Communication Systems</h5>
-				<h5>Control System Design</h5>
-		</aside>
 		<article>
 				<div>
 					<h1>Welcome To My Portfolio!</h1>
@@ -119,19 +106,43 @@
 					much more consice) Finally, Thank you for taking the time to look at my portfolio!
 
 				</p>
+				<div class = "contact_box">
+					<h1> Contact Information</h1>
 
-				<h1> Contact Information</h1>
-				<div class="">
-					<h3>Email: </h3>
-					<h4>joeveal33@gmail.com</h4>
+					<div class="">
+						<h3>Email: </h3>
+						<h4>joeveal33@gmail.com</h4>
+					</div>
+					<div class="">
+						<h3>LinkedIn: </h3>
+						<h4><a href="http://www.linkedin.com/in/joseph-veal">www.linkedin.com/in/joseph-veal</a></h4>
+					</div>
+					<div class="">
+						<h3>Github Repositories: </h3>
+						<h4><a href="https://github.com/javeal?tab=repositories">https://github.com/javeal?tab=repositories</a></h4>
+					</div>
 				</div>
-				<div class="">
-					<h3>LinkedIn: </h3>
-					<h4><a href="http://www.linkedin.com/in/joseph-veal">www.linkedin.com/in/joseph-veal</a></h4>
-				</div>
-				<div class="">
-					<h3>Github Repositories: </h3>
-					<h4><a href="https://github.com/javeal?tab=repositories">https://github.com/javeal?tab=repositories</a></h4>
+				<div class = "skill_lists">
+					<h3>Coding Languages:</h3>
+					<ul>
+						<li>C</li>
+						<li>MATLAB,</li>
+						<li>Python,</li>
+						<li>HTML,</li>
+						<li>CSS,</li>
+						<li>Java,</li>
+						<li>YAML,</li>
+						<li>JavaScript</li>
+					</ul>
+					<h3>Skills:</h3>
+					<ul>
+						<li>System Architecture,</li>
+						<li>Digital Signal Processing,</li>
+						<li>Machine Learning,</li>
+						<li>Embedded Systems,</li>
+						<li>Communication Systems,</li>
+						<li>Control System Design</li>
+					</ul>
 				</div>
 
 
@@ -139,7 +150,7 @@
 
 		</article>
 		<footer>
-			Last updated on 1/11/2020                Author: Joe Veal
+			Last updated on 2/15/2020 by Joe Veal
 		</footer>
 	</body>
 </html>
