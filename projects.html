@@ -131,7 +131,7 @@
 		<article>
 			<h1>Projects and Courses</h1>
 			<p>
-				Below are lists of projects I am either currently working on, or am planning to work on this year. Followed by that is a list of my coursework
+				Below are lists of projects I am either currently working on, or am planning to work. Followed by that is a list of my coursework
 				related to my areas of interest. These courses were all excellently taught and highly enjoyable. Each of these courses had a large influence on
 				my career decisions and project selections. Finally, I have a section on past projects, dating all the way back to the beginning of college. I
 				do not have any projects I have done professionally on this page. Each section and project can be expanded for more details by clicking on the
@@ -140,32 +140,59 @@
 
 			<h2>Current Projects</h2>
 			<div class="current_projects">
-				<h3>Phone Time Management Android App</h3>
+				<h3>Goal Management Android App</h3>
 				<div class="phone_app">
 					<p>
 							This is a project I have been looking forward to, because I have never made an app before! The goal of this project is to develop an App
-							that tracks the amount of time I spend on my phone each day. I plan to use this app to help me keep my phone usage and poor time management
+							that helps me organize my time and keep track of goals. I plan to use this app to help me keep my phone usage and poor time management
 							under control. This project will require me to do quite a bit of research, and will be one of the more difficult projects I have attempted
 							since graduating college. Even though many apps like this already exist, I would like to make this app available for anyone to use. I am
 							planning to start this project in march. Here are some deliverables I have created for myself on this project.
 					</p>
 					<ul>
 						<h5>Requirements:</h5>
-						<li>The app will track time used per day month and year</li>
+						<li>The app will allow for the creation and editing of goals and tasks</li>
+						<li>The app will have a timeframe or completion date for each goal</li>
+						<li>Goals will be marked as completed, in progress, or not started</li>
+						<li>Tasks will be repeatable, deletable, and be able to be marked complete repeatably</li>
+						<li>The app will hold routines such as grocery lists and workout plans for tasks </li>
+						<li>A goal option will be to complete a task a certain amount of times</li>
+						<li>The app will be able to connect to bluetooth devices such as the alarm clock </li>
+						<li>The app will provide statistics of progress on goals and tasks </li>
 						<li>The app will be have a configurable notification system for time spent on the phone</li>
-						<li>The code must be easily editable to add information on the dangers of phone usage</li>
+						<li>The code must be easily editable to add information on the dangers of too much phone usage</li>
 						<li>The App must be easily destributed and installed</li>
 						<li>The app will track phone time in different catagories such as texting time, game time, and socail media time (stretch goal)</li>
 					</ul>
 				</div>
-
+				<h3> Digital Synthisizer</h3>
+				<div class="synthisizer">
+					<p>
+							This project stemmed from my interest in EDM music. I've really enjoyed listening to EDM music and as a result I developed an interest in
+							how it was made. From some quick research, synthesizers have the ability to manipulate a sound wave using signal features such as sustain,
+							attack and sweep. My goal is to generate tones at the cd sampling frequency, which is the audio standard, and manipulate the features of
+							these tones. This project will give me a chance to create FFT function, filter functions and more. The low sampling rate of audio signals
+							makes for less efficiency requirements on the signal processing functions. I will then map button presses on a keyboard to specific notes.
+							there will be slider settings for the feature setting of each tone, or alternitavely the whole keyboard. Below I have a draft of some requirements
+							for the project.
+					</p>
+					<ul>
+						<h5>Requirements:</h5>
+						<li>The synthisizer will generate tones at 44.6 KHz</li>
+						<li>The synthesizer shall have a switch to control feature setting for a specific tone or all tones</li>
+						<li>The synthesizer shall have a switch to control if the device is free running or discrete</li>
+						<li>The synthesizer shall write the waveform to the sound card when the button is pressed</li>
+						<li>The synthesizer shall store all waveforms in a wave table</li>
+						<li>The synthesizer shall have sliders to control each feature of of a tone</li>
+					</ul>
+				</div>
 				<h3>Facial Recognition Website Login</h3>
 				<div class="recognition_webiste">
 					<p>
 							This project is intended to be an interface for a facial recognition project I worked on in college. This was my first ever machine learning
 							project! This was also my final project in my digital signal processing class described in the coursework section. It is also mentioned in the past
 							projects section. My goal is to clean up the code I wrote 2 years ago and improve the speed. The facial recognition algorithm makes use of PCA to
-							reduce the size of the data and remove noise. The object then follows the PCA demensionality reduction with a tweaked version of k-nearest
+							reduce the size of the data and remove noise. The algorithm then follows the PCA demensionality reduction with a tweaked version of k-nearest
 							nieghbors (KNN). In this version the reference distance is the average face and the number of nearest neighbors is 1. I know much more about
 							PCA and KNN now which should allow me to improve the project significantly! I would like to build a web based interface using the Django framework
 							that will allow users to interact with the algorithm. I want the users to be able to save data to the webserver and login to view their data using their
@@ -328,7 +355,7 @@
 			</div>
 		</article>
 		<footer>
-			Last updated on 3/1/2020 by Joe Veal
+			Last updated on 12/27/2021 by Joe Veal
 		</footer>
 	</body>
 </html>
